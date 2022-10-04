@@ -1,5 +1,5 @@
 # WIRELESS-LAB-ENVIRIONMENT
-I created this envirionment for small bussines or school lab environment. under this senario I have configured following implementataions,
+I created this environment for small business or school lab environments. under this scenario, I have configured the following implementations,
 
 -FTP Server  
 -WEB Server  
