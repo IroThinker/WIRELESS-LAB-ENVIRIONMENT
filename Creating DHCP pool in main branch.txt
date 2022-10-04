@@ -1,0 +1,25 @@
+Creating DHCP pool in main branch
+===================================
+
+BRANCH_NET_R-01>enable
+BRANCH_NET_R-01#configuration terminal
+BRANCH_NET_R-01(config)#ip dhcp pool HR-VALAN10
+BRANCH_NET_R-01(dhcp-config)#network 192.168.10.0 255.255.255.0
+BRANCH_NET_R-01(dhcp-config)#default-router 192.168.10.254
+BRANCH_NET_R-01(dhcp-config)#dns-server 210.211.212.10
+BRANCH_NET_R-01(dhcp-config)#exit
+BRANCH_NET_R-01(config)#ip dhcp pool IT-VALAN20
+BRANCH_NET_R-01(dhcp-config)#network 192.168.20.0 255.255.255.0
+BRANCH_NET_R-01(dhcp-config)#default-router 192.168.20.254
+BRANCH_NET_R-01(dhcp-config)#dns-server 210.211.212.10
+BRANCH_NET_R-01(dhcp-config)#exit
+BRANCH_NET_R-01(config)#ip dhcp pool ADMIN-VALAN30
+BRANCH_NET_R-01(dhcp-config)#network 192.168.30.0 255.255.255.0
+BRANCH_NET_R-01(dhcp-config)#default-router 192.168.30.254
+BRANCH_NET_R-01(dhcp-config)#dns-server 210.211.212.10
+BRANCH_NET_R-01(config)#exit
+BRANCH_NET_R-01(config)#ip dhcp excluded-address 192.168.10.1 192.168.10.50
+BRANCH_NET_R-01(config)#ip dhcp excluded-address 192.168.20.1 192.168.20.50
+BRANCH_NET_R-01(config)#ip dhcp excluded-address 192.168.30.1 192.168.30.50
+BRANCH_NET_R-01(dhcp-config)#end
+BRANCH_NET_R-01#write memory

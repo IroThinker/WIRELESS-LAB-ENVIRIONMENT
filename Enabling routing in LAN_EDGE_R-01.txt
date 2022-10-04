@@ -1,0 +1,12 @@
+
+
+Enabling routing in LAN_EDGE_R-01
+=================================
+
+LAN_EDGE_R-01>enable
+LAN_EDGE_R-01#configuration terminal
+LAN_EDGE_R-01(config)#router rip
+LAN_EDGE_R-01(config-router)#network 10.10.10.0
+LAN_EDGE_R-01(config-router)#network 192.168.100.0
+LAN_EDGE_R-01(config-router)#end
+LAN_EDGE_R-01#write memory

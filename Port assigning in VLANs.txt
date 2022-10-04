@@ -1,0 +1,36 @@
+Port assigning in VLANs
+========================
+
+VLAN10
+=======
+HR_SW-01>enable
+HR_SW-01#configuration terminal
+HR_SW-01(config)#interface range fastethernet0/3-4
+HR_SW-01(config-if-range)#switchport mode access
+HR_SW-01(config-if-range)#switchport access vlan 10
+HR_SW-01(config-if-range)#end 
+HR_SW-01#write memory
+
+
+
+VLAN20
+=======
+IT_SW-01>enable
+IT_SW-01#configuration terminal
+IT_SW-01(config)#interface range fastethernet0/4-5
+IT_SW-01(config-if-range)#switchport mode access
+IT_SW-01(config-if-range)#switchport access vlan 20
+IT_SW-01(config-if-range)#end 
+IT_SW-01#write memory
+
+
+
+VLAN30
+=======
+ADMIN_SW-01>enable
+ADMIN_SW-01#configuration terminal
+ADMIN_SW-01(config)#interface range fastethernet0/3-5
+ADMIN_SW-01(config-if-range)#switchport mode access
+ADMIN_SW-01(config-if-range)#switchport access vlan 30
+ADMIN_SW-01(config-if-range)#end 
+ADMIN_SW-01#write memory

@@ -1,0 +1,19 @@
+
+MAIN_SW-01
+==========
+Switch>enable
+Switch#configuration terminal
+Switch(config)#hostname MAIN_SW-01
+MAIN_SW-01(config)#vtp mode server
+MAIN_SW-01(config)#vtp domain BTEC
+MAIN_SW-01(config)#vtp password admin
+MAIN-SW-01(config)#vlan 10
+MAIN-SW-01(config-if)#name HR
+MAIN-SW-01(config-if)#exit
+MAIN-SW-01(config)#vlan 20
+MAIN-SW-01(config-if)#name IT
+MAIN-SW-01(config-if)#exit
+MAIN-SW-01(config)#vlan 30
+MAIN-SW-01(config-if)#name ADMIN
+MAIN_SW-01(config)#end
+MAIN_SW-01#write memory

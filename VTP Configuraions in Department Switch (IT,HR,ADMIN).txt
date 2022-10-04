@@ -1,0 +1,35 @@
+
+HR_SW-01
+==========
+Switch>enable
+Switch#configuration terminal
+Switch(config)#hostname HR_SW-01
+HR_SW-01(config)#vtp mode client
+HR_SW-01(config)#vtp domain BTEC
+HR_SW-01(config)#vtp password admin
+HR_SW-01(config)#end
+HR_SW-01#write memory
+
+
+IT_SW-01
+===========
+Switch>enable
+Switch#configuration terminal
+Switch(config)#hostname IT_SW-01
+HR_SW-01(config)#vtp mode client
+HR_SW-01(config)#vtp domain BTEC
+HR_SW-01(config)#vtp password admin
+HR_SW-01(config)#end
+HR_SW-01#write memory
+
+
+ADMIN_SW-01
+==============
+Switch>enable
+Switch#configuration terminal
+Switch(config)#hostname ADMIN_SW-01
+HR_SW-01(config)#vtp mode client
+HR_SW-01(config)#vtp domain BTEC
+HR_SW-01(config)#vtp password admin
+HR_SW-01(config)#end
+HR_SW-01#write memory

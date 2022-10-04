@@ -1,0 +1,15 @@
+
+Enabling routing in BRANCH_NET_R-01
+====================================
+
+BRANCH_NET_R-01>enable
+BRANCH_NET_R-01#configuration terminal
+BRANCH_NET_R-01(config)#router rip
+BRANCH_NET_R-01(config-router)#network 192.168.10.0
+BRANCH_NET_R-01(config-router)#network 192.168.10.0 
+BRANCH_NET_R-01(config-router)#network 192.168.20.0 
+BRANCH_NET_R-01(config-router)#network 192.168.30.0 
+BRANCH_NET_R-01(config-router)#network 172.168.100.0
+BRANCH_NET_R-01(config-router)#network 10.10.10.0
+BRANCH_NET_R-01(config-router)#end
+BRANCH_NET_R-01#write memory

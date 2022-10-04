@@ -1,0 +1,22 @@
+IP Assigning in Branch_Net_router Interfaces
+==============================================
+
+MAIN-SW-01>enable
+MAIN-SW-01#configuration terminal t
+MAIN-SW-01(config)#int vlan 10
+MAIN-SW-01(config-if)#ip add 192.168.10.1 255.255.255.0
+MAIN-SW-01(config-if)#no shutdown
+MAIN-SW-01(config-if)#ip helper-address 172.168.100.10
+MAIN-SW-01(config-if)#exit
+MAIN-SW-01(config)#int vlan 20
+MAIN-SW-01(config-if)#ip add 192.168.20.1 255.255.255.0
+MAIN-SW-01(config-if)#no shutdown
+MAIN-SW-01(config-if)#ip helper-address 172.168.100.10
+MAIN-SW-01(config-if)#exit
+MAIN-SW-01(config)#int vlan 30
+MAIN-SW-01(config-if)#ip add 192.168.30.1 255.255.255.0
+MAIN-SW-01(config-if)#no shutdown
+MAIN-SW-01(config-if)#ip helper-address 172.168.100.10
+MAIN-SW-01(config-if)#exit
+MAIN-SW-01(config)#end
+MAIN-SW-01#write memory
