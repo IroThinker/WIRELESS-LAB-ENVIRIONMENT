@@ -5,6 +5,6 @@ I created this environment for small business or school lab environments. under 
 -WEB Server  
 -VLANs  
 -DHCP Server  
--Wireless Routrer  
+-Wireless Router
 -VTP Server / Client  
--Routing (RIP)
+-Routing Protocol (RIP)
