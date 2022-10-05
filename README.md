@@ -1,11 +1,11 @@
 # WIRELESS-LAB-ENVIRIONMENT
-I created this environment for small business or school lab environments. under this scenario, I have configured the following implementations,
+I created this network for small business or school lab environments. under this scenario, I have configured the following implementations,
 
 -FTP Server  
 -WEB Server  
 -VLANs  
 -DHCP Server  
--Wireless Router
+-Wireless Router  
 -VTP Server / Client  
 -Routing Protocol (RIP)
 
